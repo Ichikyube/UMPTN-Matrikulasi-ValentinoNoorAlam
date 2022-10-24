@@ -1,0 +1,6 @@
+# Ignore auto folders
+.vscode
+node_modules
+
+FolderRahasia/
+catatanRahasia.txt
