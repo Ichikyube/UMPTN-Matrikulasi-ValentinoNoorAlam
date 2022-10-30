@@ -1,4 +1,3 @@
-
 class Stack {
     constructor(arr) {
         this.items = [...arr];
@@ -67,43 +66,43 @@ class Queue {
     }
 
     last() {
-
+        return this.items[this.length - 1]
     }
-    add() {
-
+    add(item) {
+        return this.items.push(item);
     }
     out() {
-
+        return this.items.shift();
     }
     clear() {
-
+        return this.items.length = 0;
     }
     length() {
-
+        return this.items.length;
     }
-    search() {
-
+    search(item) {
+        return this.items.find(item)
     }
-    divide() {
-
+    divide(from, newQQ) {
+        return newQQ.concat(this.items.splice((from, this.length() - 1) / 2))
     }
-    concat() {
-
+    concat(...otherQQ) {
+        return this.items.concat(...otherQQ);
     }
     lineup() {
-
+        return this.items.join('');
     }
-    deploy() {
-
+    isEmpty() {
+        return this.length() == 0;
     }
 }
-
-class LinkedList {
-    constructor(arr) {
-        this.item;
-        this.next;
+class NodeList {
+    constructor(val) {
+        this.value = val;
+        this.next = null;
     }
-
+    length = 0;
+    head = null;
     search() {
 
     }
